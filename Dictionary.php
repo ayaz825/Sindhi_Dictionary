@@ -1,26 +1,24 @@
-<!-- http://localhost/Easytoearn/SindhiDic/Dictionary.php  offlne 50 words with all function in pdf file -->
+<!-- http://localhost/dashboard/project/index.php  offlne 50 words with all function in pdf file -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <style>
+
+<style>
+
 /* General Reset */
-body{
+body {
     margin: 20px;
     padding: 20px;
     box-sizing: border-box;
-
-    /* background-image: url('C:\Users\Ayaz\AppData\Local\Programs\Microsoft VS Code\NewXampp2025\htdocs\Easytoearn\SindhiDic\dicmage1.jpg'); Replace with your image path */
-    background-image: url('C:\Users\Ayaz\AppData\Local\Programs\Microsoft VS Code\NewXampp2025\htdocs\Easytoearn\SindhiDic\dicmage1.jpg');
-
-    background-size: cover; /* Adjusts image to cover the full screen */
-    background-position: center; /* Centers the image */
-    background-repeat: no-repeat; /* Prevents repeating */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     font-family: Arial, sans-serif;
     background-color: #a9ff68;
     color: black;
-    border:5px red solid;
+    border: 5px red solid;
 }
 
 /* Header */
@@ -36,10 +34,8 @@ header {
     align-items: center;
 }
 
-.search-bar {
-    padding: 0px;
+.search-bar, .search-bar1 {
     font-size: 16px;
-    align-items: left;
     width: 100px;
     height: 40px;
     border-radius: 22px;
@@ -48,14 +44,7 @@ header {
 }
 
 .search-bar1 {
-    padding: 0px;
-    font-size: 15px;
-    width: 100px;
-    height: 40px;
     text-align: center;
-    border-radius: 22px;
-    border: 2px solid #eb0511;
-    background-color: white;
 }
 
 nav ul {
@@ -78,6 +67,17 @@ nav ul li a:hover {
     color: yellow;
 }
 
+.top-bar {
+    background-color: rgb(95, 108, 209);
+    padding: 10px;
+    text-align: center;
+}
+
+.top-bar h1 {
+    font-size: 30px;
+    color: black;
+}
+
 /* Main Dictionary Section */
 .dictionary-container {
     background-color: white;
@@ -85,7 +85,7 @@ nav ul li a:hover {
     padding: 30px;
     width: 50%;
     border-radius: 10px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: center;
 }
 
@@ -97,110 +97,22 @@ nav ul li a:hover {
     border-radius: 5px;
     border: 2px solid #21b4e2;
 }
- 
-button {
-    padding: 10px 20px;
-    background-color: orange;
-    color: white;
-    border: none;
+
+li {
+    margin: 10px;
+    padding:  20px;
+    background-color:rgb(204, 114, 181);
+    color: black;
+    border: 5px solid red;
     border-radius: 5px;
     cursor: pointer;
 }
 
 button:hover {
-    background-color: darkorange;}
-.footer-grid {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            gap: 30px;
-            margin-bottom: 40px;
-            background:rgb(56, 185, 205);
-        }
+    background-color: darkorange;
+}
 
-        .footer-section h3 {
-            color: #075e54;
-            margin-bottom: 15px;
-            font-size: 16px;
-        }
-
-        .footer-links {
-            list-style: none;
-        }
-
-        .footer-links li {
-            margin-bottom: 10px;
-        }
-
-        .footer-links a {
-            color: #666;
-            text-decoration: none;
-            font-size: 14px;
-        }
-
-        .footer-links a:hover {
-            color: #25D366;
-        }
-
-        .copyright {
-            text-align: center;
-            border-top: 1px solid #ddd;
-            padding-top: 20px;
-            color: #666;
-            font-size: 14px;
-        } */ */
-
-        .newsletter-form {
-            margin: 30px 0;
-            text-align: center;
-        }
-
-        .newsletter-form input {
-            padding: 10px;
-            width: 300px;
-            margin-right: 10px;
-            border: 1px solid #ddd;
-        }
-
-        .newsletter-form button {
-            background-color: #25D366;
-            color: white;
-            border: none;
-            padding: 10px 20px;
-            cursor: pointer;
-        }
-
-        .message {
-            text-align: center;
-            color: #25D366;
-            margin-top: 10px;
-        }
-    .newsletter-form { 
-        margin: 30px 0;
-        text-align: center;
-    }
-
-    .newsletter-form input {
-        padding: 10px;
-        width: 300px;
-        margin-right: 10px;
-        border: 1px solid #ddd;
-    }
-
-    .newsletter-form button {
-        background-color: #25D366;
-        color: white;
-        border: none;
-        padding: 10px 20px;
-        cursor: pointer;
-    }
-
-    .message {
-        text-align: center;
-        color: #25D366;
-        margin-top: 10px;
-    }
-
-
+/* Footer */
 footer {
     background-color: #111;
     color: white;
@@ -210,11 +122,6 @@ footer {
 .footer-container {
     max-width: 1200px;
     margin: 0 auto;
-}
-
-.footer-logo h2 {
-    font-size: 24px;
-    margin-bottom: 20px;
 }
 
 .footer-columns {
@@ -228,18 +135,9 @@ footer {
     min-width: 150px;
 }
 
-.footer-column h3 {
-    font-size: 16px;
-    margin-bottom: 10px;
-}
-
 .footer-column ul {
     list-style: none;
     padding: 0;
-}
-
-.footer-column ul li {
-    margin-bottom: 8px;
 }
 
 .footer-column ul li a {
@@ -265,19 +163,14 @@ footer {
     font-size: 16px;
     cursor: pointer;
     border-radius: 5px;
-    margin-bottom: 10px;
 }
 
 .download-btn:hover {
     background-color: #1EBE5D;
 }
 
-.footer-bottom p {
+.footer-bottom p, .footer-bottom a {
     font-size: 12px;
-    margin: 10px 0;
-}
-
-.footer-bottom a {
     color: white;
     text-decoration: none;
 }
@@ -286,49 +179,64 @@ footer {
     text-decoration: underline;
 }
 
-.social-icons {
-    margin: 10px 0;
-}
-
-.social-icons a {
-    margin: 0 8px;
-    font-size: 18px;
+/* Wavy Text Styling */
+.wave-text {
+    font-size: 3rem;
+    font-weight: bold;
     color: white;
-    text-decoration: none;
+    display: flex;
+    gap: 5px;
 }
 
-.language-selector select {
-    padding: 5px;
-    font-size: 14px;
-    border: none;
+.wave-text span {
+    display: inline-block;
+    animation: wave 1.5s infinite ease-in-out, colorChange 2s infinite alternate;
+}
+
+@keyframes wave {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+
+@keyframes colorChange {
+    0% { color: red; }
+    50% { color: yellow; }
+    100% { color: black; }
+}
+
+/* Animated Book */
+.book {
+    position: relative;
+    width: 250px;
+    height: 350px;
+    perspective: 1200px;
+    text-align: center;
+    align-items: center;
+}
+
+.page {
+    position: absolute;
+    width: 100%;
+    height: 100%;
     border-radius: 5px;
+    backface-visibility: hidden;
+    transform-origin: left;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    animation: flip 10s infinite alternate ease-in-out;
 }
- /* Wavy text styling */
- .wave-text {
-            font-size: 3rem;
-            font-weight: bold;
-            color: white;
-            display: flex;
-            gap: 5px;
-        }
 
-        .wave-text span {
-            display: inline-block;
-            animation: wave 1.5s infinite ease-in-out, colorChange 2s infinite alternate;
-        }
+.page:nth-child(odd) { background: red; }
+.page:nth-child(even) { background: blue; }
 
-        /* Wave effect */
-        @keyframes wave {
-            0%, 100% { transform: translateY(0); }
-            50% { transform: translateY(-10px); } /* Moves up */
-        }
-
-        /* Color-changing effect */
-        @keyframes colorChange {
-            0% { color: red; }
-            50% { color: yellow; }
-            100% { color: black; }
-        }
+@keyframes flip {
+    0% { transform: rotateY(0deg); }
+    100% { transform: rotateY(-180deg); }
+}
 
 .wave-text span:nth-child(1) { animation-delay: 0s; }
         .wave-text span:nth-child(2) { animation-delay: 0.1s; }
@@ -370,64 +278,9 @@ footer {
         .wave-text span:nth-child(38) { animation-delay: 3.7s; }
     
 
-        
-        .book {
-            position: relative;
-            width: 250px;
-            height: 350px;
-            perspective: 1200px;
-            text-align: center;
-            align-items: center;
-        }
 
-        .page {
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            border-radius: 5px;
-            backface-visibility: hidden;
-            transform-origin: left;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 20px;
-            font-weight: bold;
-            color: white;
-            animation: flip 10s infinite alternate ease-in-out;
-        }
+</style>
 
-        /* Apply different colors to pages */
-        .page:nth-child(odd) { background: red; }
-        .page:nth-child(even) { background: blue; }
-
-        /* Delay animation for each page */
-        .page:nth-child(1) { animation-delay: 0s; }
-        .page:nth-child(2) { animation-delay: 1s; }
-        .page:nth-child(3) { animation-delay: 2s; }
-        .page:nth-child(4) { animation-delay: 3s; }
-        .page:nth-child(5) { animation-delay: 4s; }
-        .page:nth-child(6) { animation-delay: 5s; }
-        .page:nth-child(7) { animation-delay: 6s; }
-        .page:nth-child(8) { animation-delay: 7s; }
-        .page:nth-child(9) { animation-delay: 8s; }
-        .page:nth-child(10) { animation-delay: 9s; }
-        .page:nth-child(11) { animation-delay: 10s; }
-        .page:nth-child(12) { animation-delay: 11s; }
-        .page:nth-child(13) { animation-delay: 12s; }
-        .page:nth-child(14) { animation-delay: 13s; }
-        .page:nth-child(15) { animation-delay: 14s; }
-        .page:nth-child(16) { animation-delay: 15s; }
-        .page:nth-child(17) { animation-delay: 16s; }
-        .page:nth-child(18) { animation-delay: 17s; }
-        .page:nth-child(19) { animation-delay: 18s; }
-        .page:nth-child(20) { animation-delay: 19s; }
-
-        @keyframes flip {
-            0% { transform: rotateY(0deg); }
-            100% { transform: rotateY(-180deg); }
-        }
-    </style>
-<!--     <link rel="stylesheet" href="{{ asset('css/style.css') }}"> -->
     <title>Sindhi Dictionary 2.0</title>
    
 </head>
@@ -487,6 +340,11 @@ footer {
              </div>
             <!-- <input type="text" placeholder="Login or Register" class="search-bar"> -->
         </div>
+        
+     <div class="top-bar">
+     <h1> <span class="easy">English</span> <span class="to">TO</span> <span class="earn">Sindhi</span> <span class="and">Dictionary</span> <span class="i"></span> </h1>
+        <div class="menu">
+        
         <nav>
             <ul>
                 <li><a href="home.php">Home</a></li>
@@ -499,6 +357,8 @@ footer {
                 <li><a href="policy.php">Privacy</a></li>
              </ul>
         </nav>
+        </div>
+</div>
     </header>   
     <main>
          <section class="dictionary-container">
